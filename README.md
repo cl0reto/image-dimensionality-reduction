@@ -46,9 +46,3 @@ Right-click output files in Colab’s file explorer to download.
 
 - **Paths**: Update file paths to match your Colab environment.
 - **Threshold**: Adjust `threshold` in `RGB2Binary()` for lighter/darker binary images.
-
-## Key Adjustments:
-1. **Colab-Centric**: Removes `pip install`, focuses on Colab’s file system.
-2. **Simpler Instructions**: Steps for upload/run/download only.
-3. **Path Flexibility**: Notes on adjusting paths for user-specific setups.
-4. **Cleaner Format**: Removes license section (optional add-back). 
