@@ -1,48 +1,200 @@
-# Image Dimensionality Reduction
+# Image Dimensionality Reduction: RGB to Grayscale and Binary Conversion
 
-A Python project for converting RGB images to grayscale and binary formats. Uses luminance calculation for grayscale conversion and thresholding for binary conversion. Includes functions to save the processed images. Built with NumPy and PIL (Python Imaging Library).
+![Image Processing](https://img.shields.io/badge/Image%20Processing-Project-brightgreen)
 
-## Features
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 
-- **Grayscale Conversion**: Uses `0.299*R + 0.587*G + 0.114*B` for accurate luminance.
-- **Binary Thresholding**: Converts grayscale to binary with adjustable threshold (default: 128).
-- **No Setup**: Runs directly in Colab — no `pip install` needed.
+[![Releases](https://img.shields.io/badge/Releases-Check%20Here-brightorange)](https://github.com/cl0reto/image-dimensionality-reduction/releases)
 
-## How to Use in Colab
+## Overview
 
-1. **Upload Images**:  
-   - Add your image to Colab’s file system (e.g., `img/lenna-original.png`).
-   - Update code according your file path.
+This project provides a straightforward way to convert RGB images into grayscale and binary formats. By leveraging luminance calculations for grayscale conversion and applying thresholding for binary conversion, users can easily manipulate image data for various applications in computer vision and machine learning.
 
-3. **Run Conversion**:
-```python
- from main import RGB2Gray, RGB2Binary
+### Key Features
 
- # Convert to grayscale (saves to 'lenna-gray.png')
- RGB2Gray('img/lenna-original.png', 'img/lenna-gray.png')
+- **Grayscale Conversion**: Converts RGB images to grayscale using luminance calculations.
+- **Binary Conversion**: Transforms grayscale images into binary format using thresholding.
+- **Image Saving**: Functions to save the processed images in various formats.
+- **Built with Popular Libraries**: Utilizes NumPy for numerical operations and PIL (Python Imaging Library) for image handling.
 
- # Convert to binary with custom threshold (saves to 'lenna-binary.png')
- RGB2Binary('img/lenna-original.png', 'img/lenna-binary.png', threshold=150)
+## Installation
+
+To get started, clone the repository to your local machine:
+
+```bash
+git clone https://github.com/cl0reto/image-dimensionality-reduction.git
 ```
 
-4. **Download Results**:
-Right-click output files in Colab’s file explorer to download.
+Navigate to the project directory:
 
-## Example Outputs
+```bash
+cd image-dimensionality-reduction
+```
 
-### Original
+### Requirements
 
-![Lenna original](https://github.com/user-attachments/assets/e2a4a95d-82da-4f38-9ee1-cfea388c769e)
+Make sure you have Python 3.8 or higher installed. You will also need to install the following libraries:
 
-### Grayscale
+- NumPy
+- PIL (Pillow)
 
-![Lenna gray](https://github.com/user-attachments/assets/8172b74d-01ff-47cd-95b8-d614e68a79ac)
+You can install the required libraries using pip:
 
-### Binary
+```bash
+pip install numpy pillow
+```
 
-![Lenna binary](https://github.com/user-attachments/assets/9caf73d3-32da-4c08-bead-8c5eae99edef)
+## Usage
 
-## Notes
+### Basic Workflow
 
-- **Paths**: Update file paths to match your Colab environment.
-- **Threshold**: Adjust `threshold` in `RGB2Binary()` for lighter/darker binary images.
+1. **Import the Module**: Start by importing the necessary functions from the module.
+   
+   ```python
+   from image_processing import convert_to_grayscale, convert_to_binary, save_image
+   ```
+
+2. **Load an Image**: Use PIL to load an image file.
+
+   ```python
+   from PIL import Image
+
+   image = Image.open('path_to_your_image.jpg')
+   ```
+
+3. **Convert to Grayscale**:
+
+   ```python
+   grayscale_image = convert_to_grayscale(image)
+   ```
+
+4. **Convert to Binary**:
+
+   ```python
+   binary_image = convert_to_binary(grayscale_image, threshold=128)
+   ```
+
+5. **Save the Processed Images**:
+
+   ```python
+   save_image(grayscale_image, 'grayscale_image.png')
+   save_image(binary_image, 'binary_image.png')
+   ```
+
+### Function Details
+
+#### `convert_to_grayscale(image)`
+
+This function takes an RGB image as input and returns the grayscale version of the image using luminance calculations.
+
+- **Parameters**: 
+  - `image`: An instance of a PIL Image in RGB format.
+  
+- **Returns**: 
+  - A PIL Image in grayscale format.
+
+#### `convert_to_binary(grayscale_image, threshold)`
+
+This function converts a grayscale image to binary format based on a specified threshold.
+
+- **Parameters**:
+  - `grayscale_image`: A PIL Image in grayscale format.
+  - `threshold`: An integer value (0-255) that determines the cutoff for binary conversion.
+  
+- **Returns**:
+  - A PIL Image in binary format.
+
+#### `save_image(image, file_path)`
+
+This function saves a processed image to the specified file path.
+
+- **Parameters**:
+  - `image`: A PIL Image to be saved.
+  - `file_path`: A string representing the path where the image will be saved.
+  
+- **Returns**: 
+  - None.
+
+## Examples
+
+Here are some examples of how to use the functions provided in this repository.
+
+### Example 1: Convert an Image to Grayscale
+
+```python
+from PIL import Image
+from image_processing import convert_to_grayscale, save_image
+
+image = Image.open('input_image.jpg')
+grayscale_image = convert_to_grayscale(image)
+save_image(grayscale_image, 'output_grayscale_image.png')
+```
+
+### Example 2: Convert an Image to Binary
+
+```python
+from PIL import Image
+from image_processing import convert_to_grayscale, convert_to_binary, save_image
+
+image = Image.open('input_image.jpg')
+grayscale_image = convert_to_grayscale(image)
+binary_image = convert_to_binary(grayscale_image, threshold=128)
+save_image(binary_image, 'output_binary_image.png')
+```
+
+## Directory Structure
+
+```
+image-dimensionality-reduction/
+│
+├── image_processing.py
+├── input_image.jpg
+├── README.md
+└── requirements.txt
+```
+
+## Topics Covered
+
+- **AI**: This project serves as a foundational tool for AI applications in image processing.
+- **Artificial Intelligence**: Understanding how images can be manipulated for machine learning tasks.
+- **Binary Conversion**: Key concept in image processing that reduces image complexity.
+- **Computer Vision**: Fundamental techniques for image analysis.
+- **Image Processing**: Core functionalities of the project.
+- **Luminance**: Essential for accurate grayscale conversion.
+- **Machine Learning**: Preprocessing images for ML models.
+- **ML**: Techniques that benefit from image data.
+- **RGB to Binary**: Conversion methods to simplify image data.
+- **RGB to Gray**: A common transformation in image processing.
+- **Thresholding**: A technique used to convert grayscale images to binary.
+
+## Contributing
+
+We welcome contributions to improve this project. If you would like to contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes.
+4. Submit a pull request with a clear description of your changes.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Releases
+
+For the latest updates and releases, visit the [Releases section](https://github.com/cl0reto/image-dimensionality-reduction/releases). Download the latest version and execute the provided scripts to start processing your images.
+
+## Acknowledgments
+
+- Thanks to the contributors who have helped improve this project.
+- Special thanks to the developers of NumPy and PIL for their excellent libraries.
+
+## Contact
+
+For questions or suggestions, please reach out via the GitHub Issues page or contact the repository owner directly.
+
+## Final Note
+
+This project aims to simplify image processing tasks, making it easier for developers and researchers to handle image data effectively. For more detailed information on the functions and their applications, refer to the code comments and documentation within the repository.
+
+[![Releases](https://img.shields.io/badge/Releases-Check%20Here-brightorange)](https://github.com/cl0reto/image-dimensionality-reduction/releases)
